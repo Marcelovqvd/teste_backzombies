@@ -12,7 +12,7 @@ Seu objetivo é desenvolver uma API GraphQL, que irá armazenar informações do
 
 Para que isso seja possível, a API deve atender aos seguintes casos de uso:
 
-Adicionar sobrevientes à base de dados
+- Adicionar sobrevientes à base de dados
 
 Um sobrevivente deve ter nome, idade, sexo e a sua última localização (latitude, longitude).
 
@@ -93,3 +93,13 @@ Arquivo compactado
 Em ambos os casos, deve constar no projeto um arquivo chamado README.md com instruções para a compilação/execução.
 
 Obs.: Não faça fork ou envie pull request com os códigos.
+
+## Docker
+
+\$ docker run --name backzombies -e POSTGRES_PASSWORD=senha -p 5434:5432 -d postgres
+
+#### Postbird
+
+port: 5434
+username: postgres
+password: senha
