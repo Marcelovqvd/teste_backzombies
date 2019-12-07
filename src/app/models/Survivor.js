@@ -8,6 +8,7 @@ class Survivor extends Model {
         age: Sequelize.INTEGER,
         genre: Sequelize.STRING,
         location: Sequelize.STRING,
+        infected: Sequelize.BOOLEAN,
       },
       {
         sequelize,
