@@ -1,13 +1,11 @@
 import Sequelize, { Model } from 'sequelize';
 
-class Survivor extends Model {
+class Item extends Model {
   static init(sequelize) {
     super.init(
       {
         name: Sequelize.STRING,
-        age: Sequelize.INTEGER,
-        genre: Sequelize.STRING,
-        location: Sequelize.STRING,
+        value: Sequelize.INTEGER,
       },
       {
         sequelize,
@@ -16,4 +14,4 @@ class Survivor extends Model {
   }
 }
 
-export default Survivor;
+export default Item;

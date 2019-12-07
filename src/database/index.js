@@ -1,10 +1,11 @@
 import Sequelize from 'sequelize';
 
 import Survivor from '../app/models/Survivor';
+import Item from '../app/models/Items';
 
 import databaseConfig from '../config/database';
 
-const models = [Survivor];
+const models = [Survivor, Item];
 
 class Database {
   constructor() {
