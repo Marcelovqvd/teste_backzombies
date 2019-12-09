@@ -5,6 +5,7 @@ class Survivor extends Model {
     super.init(
       {
         name: Sequelize.STRING,
+        email: Sequelize.STRING,
         age: Sequelize.INTEGER,
         genre: Sequelize.STRING,
         location: Sequelize.STRING,
@@ -14,6 +15,7 @@ class Survivor extends Model {
         sequelize,
       }
     );
+    return this;
   }
 }
 
